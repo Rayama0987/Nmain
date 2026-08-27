@@ -1,0 +1,9 @@
+# Cloudflare Pages SPA Routing & API Proxy
+# --------------------------------------------------
+# バックエンドAPIへのプロキシ (同一オリジンルーティング)
+# ※ APIドメインが決まっている場合は以下のURLをお使いのドメインまたはTunnelドメインに変更できます
+# /api/*  https://api.yourdomain.com/api/:splat  200
+# /files/* https://api.yourdomain.com/files/:splat 200
+
+# SPAフォールバック (リロード時の404防止)
+/*    /index.html   200
