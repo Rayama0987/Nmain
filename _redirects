@@ -1,0 +1,8 @@
+# Cloudflare Pages SPA Routing & Tailscale API Proxy
+# --------------------------------------------------
+/api/*  https://swiftforge3d.taile82389.ts.net/api/:splat  200
+/files/* https://swiftforge3d.taile82389.ts.net/files/:splat 200
+/process-files/* https://swiftforge3d.taile82389.ts.net/process-files/:splat 200
+
+# SPAフォールバック (リロード時の404防止)
+/*    /index.html   200
